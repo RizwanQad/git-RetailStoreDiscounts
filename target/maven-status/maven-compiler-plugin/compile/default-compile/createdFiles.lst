@@ -1,0 +1,11 @@
+com\retail_discount\api\core\Cart.class
+com\retail_discount\api\core\ItemType.class
+com\retail_discount\api\core\Item.class
+com\retail_discount\api\core\UserType.class
+com\retail_discount\api\core\Product.class
+com\retail_discount\api\Main.class
+com\retail_discount\api\discount\item\PricingPolicy.class
+com\retail_discount\api\discount\item\PromotionPricing.class
+com\retail_discount\api\core\User.class
+com\retail_discount\api\discount\DiscountPolicy.class
+com\retail_discount\api\discount\ThresholdDiscount.class
