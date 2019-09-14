@@ -5,6 +5,5 @@ package com.retail_discount.api.core;
  * 
  */
 public enum ItemType {
-	GROCERY,
-	OTHER,
+	GROCERY, OTHER,
 }

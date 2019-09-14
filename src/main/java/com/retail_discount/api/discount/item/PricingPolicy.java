@@ -8,25 +8,42 @@ import com.retail_discount.api.core.ItemType;
  */
 public class PricingPolicy implements Item {
 
-    private final Item baseItem;
+	private final Item baseItem;
 
-    public PricingPolicy(Item baseItem) {
-        this.baseItem = baseItem;
-    }
+	/**
+	 * 
+	 * @param baseItem
+	 */
+	public PricingPolicy(Item baseItem) {
+		this.baseItem = baseItem;
+	}
 
-    public double getUnitPrice() { 
-    	return baseItem.getUnitPrice();
-    }
+	/**
+	 * @return baseItem.getUnitPrice()
+	 */
+	public double getUnitPrice() {
+		return baseItem.getUnitPrice();
+	}
 
-    public String getName() { 
-    	return baseItem.getName(); 
-    }
-    
-    public ItemType getType() {
-    	return baseItem.getType(); 
-    }
+	/**
+	 * @return baseItem.getName()
+	 */
+	public String getName() {
+		return baseItem.getName();
+	}
 
-    public double priceForQuantity(int quantity) {
-        return baseItem.priceForQuantity(quantity);
-    }
+	/**
+	 * @return baseItem.getType()
+	 */
+	public ItemType getType() {
+		return baseItem.getType();
+	}
+
+	/**
+	 * @param quantity
+	 * @return baseItem.priceForQuantity(quantity)
+	 */
+	public double priceForQuantity(int quantity) {
+		return baseItem.priceForQuantity(quantity);
+	}
 }

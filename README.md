@@ -8,9 +8,9 @@ The project is based on a small java program to simulate the retail discounts wh
 * Eclipse to run and test the program
 * SonarQube for showing quality summary and code coverage
 
-Since the program is created in Eclipse it is recommended to also run and test it by importing it into Eclipse though other IDE's can also be used. You can run the program by executing shopping.Main.java file in Eclipse
+Since the program is created in Eclipse it is recommended to also run and test it by importing it into Eclipse though other IDE's can also be used. You can run the program by executing retail_discount.api.Main.java file in Eclipse
 
-Furthermore, unit tess are provided that can run by executing shopping.test.TestDiscounts and shopping.test.TestWithoutDiscounts. To get the complete test coverage just run JUnit Tests in IDE.
+Furthermore, unit test are provided that can run by executing retail_discount.api.TestDiscounts and retail_discount.api.TestWithoutDiscounts. To get the complete test coverage just run JUnit Tests in IDE.
 
 Comments are provided in the code and test cases for briefly describe the functionality and approach.
 
@@ -23,7 +23,7 @@ Comments are provided in the code and test cases for briefly describe the functi
 
 - A **cart** contains a number of items, and can compute the total price of its contents.
 
-- Cart items can either be actual **products** with a fixed unit price, or products with a **pricing policy** attached for any dicounts that are calculated based on items and not the overall discount policy of current cart.
+- Cart items can either be actual **products** with a fixed unit price, or products with a **pricing policy** attached for any discounts that are calculated based on items and not the overall discount policy of current cart.
 
 - **DiscountPolicy** is used to calculate or apply different discounts based on overall cart value of contents.
 

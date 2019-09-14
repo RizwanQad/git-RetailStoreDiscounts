@@ -37,10 +37,8 @@ public class TestDiscounts {
     	employee = new User(UserType.EMPLOYEE, "John");
     	affiliate = new User(UserType.AFFILIATE, "Michael");
     	simpleUser = new User(UserType.SIMPLE, "Bob");
-    	LocalDateTime now=LocalDateTime.now();
     	simpleUserWith2Years = new User(UserType.SIMPLE, "Alex", LocalDateTime.of(2014, 7, 19, 6, 40, 45));
-    	//simpleUserWith2Years = new User(UserType.SIMPLE, "Alex",now.minusMinutes(25));
-        groceryItem = new Product("Rice", 20, ItemType.GROCERY);
+    	groceryItem = new Product("Rice", 20, ItemType.GROCERY);
         otherItem = new Product("TV", 222, ItemType.OTHER);
         discountPolicy = new ThresholdDiscount();
     }
@@ -87,7 +85,7 @@ public class TestDiscounts {
          *  10% discount then 5 dollars off of each 100 dollars of total price because of other item
          *  Total 222 * 4 = 888
          *  After 10% discount = 799.2
-         *  After 35 dollars off due to price over $700 = 591.6 
+         *  After 35 dollars off due to price over $700 = 764.2 
          */
         assertEquals(764.2, cart.total(), 0.01);
         
